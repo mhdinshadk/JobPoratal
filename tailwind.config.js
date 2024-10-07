@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: ['class'],
-    content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+	darkMode: ['class'],
+	content: [
+	  './index.html',
+	  './src/**/*.{js,ts,jsx,tsx}',  // Ensure all relevant files are included
+	],
   theme: {
   	extend: {
   		borderRadius: {
@@ -43,6 +43,7 @@ module.exports = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
+			  
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
